@@ -1,0 +1,563 @@
+
+/* ---- FONTS ---- */
+
+@font-face {
+font-family: 'ProximaNova-Regular';
+    src: url('../font-family/ProximaNova/ProximaNova-Regular.woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../font-family/ProximaNova/ProximaNova-Light.woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('../font-family/ProximaNova/ProximaNova-Semibold.woff');
+}
+
+
+@font-face {
+    font-family: 'Syne-Bold';
+    src: url('../font-family/Syne/Syne-Bold.woff');
+}
+
+/* ---- COMMON ---- */
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: #000000;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #FC6D44;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: Syne-Bold;
+    color: #000000;
+    cursor: default;
+}
+
+p {
+ margin: 0;
+}
+
+.common-btn {
+    border: 1px solid black;
+    padding: 5px 25px;
+    font-family: Syne-Bold;
+}
+
+.min-h {
+    min-height: calc(100vh - 230px);
+}
+
+/* ---- HEADER ---- */
+
+
+header {
+    height: 100px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ProximaNova-Regular, sans-serif;
+    font-size: 16px;
+}
+
+.auth-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+/* ---- LOGIN FORM ---- */
+
+#h1-login {
+    font-size: 36px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login input {
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 5px;
+}
+
+.form-login input:focus {
+    outline: none;
+}
+
+.form-login input::placeholder {
+    color: #949494;
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+}
+
+#login-sign-up {
+    color: #FC6D44;
+    font-family: ProximaNova-Light;
+}
+
+.btn-login-sign-up {
+    width: 220px;
+    height: 60px;
+    background-color: white;
+    transition: all .3s;
+    font-size: 24px;
+}
+
+.btn-login-sign-up:hover {
+    cursor: pointer;
+    color: #FC6D44;
+}
+
+.form-login input {
+    width: 100%;
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    height: 130px;
+    background-color: #FC6D44;
+    font-family: ProximaNova-Light;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    font-family: ProximaNova-Regular;
+}
+
+.dev-info {
+    width: 140px;
+}
+
+/* ---- LIBRARY ---- */
+
+.book-card-image {
+    width: 200px;
+    height: 300px;
+    transition: all .3s;
+}
+
+.book-card-image:hover {
+    box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.25);
+}
+
+.book-card-genre {
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+    color: #606060;
+}
+
+.book-card-author {
+    font-family: ProximaNova-Light;
+    font-size: 16px;
+    color: #000000;
+}
+
+.book-card-name {
+    font-family: Syne-Bold;
+    font-size: 18px;
+}
+
+.book-card-price {
+    font-family: ProximaNova-Light;
+    font-size: 18px;
+    color: #000000;
+}
+
+.library-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 170px;
+    height: calc(100vh - 100px);
+    max-height: calc(100vh - 278px);
+    overflow: auto;
+}
+
+.library-menu form {
+    border-bottom: 1px solid black;
+}
+
+.library-menu form button {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.library-menu form button img {
+    padding-bottom: 4px;
+    width: 12px;
+}
+
+.library-menu form input {
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+    border: none;
+    padding: 0 5px;
+}
+
+.library-menu input:focus {
+    outline: none;
+}
+
+.library-menu input::placeholder {
+    color: #949494;
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+}
+
+.library-menu-item button {
+    cursor: pointer;
+    font-family: ProximaNova-Regular;
+    font-size: 21px;
+    transition: .3s all;
+    margin-bottom: 15px;
+}
+
+.library-menu-item button:focus {
+    outline: none;
+}
+
+.library-menu-item button:hover{
+    color: #FC6D44;
+}
+
+.arrow {
+    margin-bottom: 4px;
+    transform: rotate(0.5turn);
+}
+
+.genre-list{
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: ProximaNova-Light;
+    letter-spacing: 0.03em;
+}
+
+.menu-item-list a{
+    padding-left: 15px;
+    margin-bottom: 6px;
+}
+
+/* ---- BOOK ---- */
+
+.book-img {
+    width: 475px;
+    height: 700px;
+}
+
+.book-name {
+    margin-top: 100px;
+    font-size: 36px;
+}
+
+.author-name {
+    font-family: Syne-Bold;
+    font-size: 24px;
+    color: #606060;
+}
+
+.option-name {
+    font-family: Syne-Bold;
+    font-size: 14px;
+}
+
+.option-value {
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+}
+
+.option-name-price {
+    font-family: Syne-Bold;
+    font-size: 18px;
+}
+
+.option-value-price {
+    font-family: Syne-Bold;
+    font-size: 18px
+}
+
+.read-button {
+    margin-top: 100px;
+}
+
+.read-button p {
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+    color: #595959;
+    padding-bottom: 20px;
+}
+
+.read-button .btn-add {
+    padding: 10px 40px;
+    font-family: Syne-Bold;
+    font-size: 16px;
+}
+
+.read-button a {
+    padding: 10px 40px;
+    font-family: Syne-Bold;
+    font-size: 24px;
+}
+
+.desc-row {
+    margin-top: 50px;
+}
+
+.book-control a {
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    letter-spacing: .03em;
+}
+
+.book-control a:first-child {
+    margin-right: 50px;
+}
+
+/* ---- HOME ---- */
+
+main {
+    background-color: #fafafa;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.main-carousel {
+    left: 0;
+    width: calc(100vw + 120px);
+    margin-top: 4%;
+    overflow: hidden;
+    display: flex;
+}
+
+.main-carousel-item {
+    position: absolute;
+    left: 0;
+    width: 220px;
+    height: 320px;
+}
+
+.preview-h2 {
+    font-size: 38px;
+    letter-spacing: 0.03em;
+    line-height: 122.78%;
+    cursor: default;
+    margin-top: 20%;
+}
+
+.preview-p {
+    font-family: ProximaNova-Semibold;
+    letter-spacing: 0.03em;
+    line-height: 23px;
+    font-size: 19px;
+    cursor: default;
+    margin-top: 4%;
+    margin-bottom: 29%;
+}
+
+.preview-p span {
+    color: #FC6D44;
+}
+
+.catalog-btn {
+    font-family: Syne-Bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    padding: 20px 35px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FC6D44;
+    height: 95px;
+}
+
+.slogan-text {
+    font-size: 24px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.recommendations .container {
+    height: 1300px;
+}
+
+.want-to-read {
+    margin-top: 11%;
+}
+
+.want-to-read h3{
+    font-size: 24px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.carousel-header-1 {
+    margin-top: 5%;
+}
+
+.carousel-header-2 {
+    margin-top: 7%;
+}
+
+.carousel-header-h4 {
+    font-size: 18px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.carousel-header-h4 span {
+    color: #FC6D44;
+}
+
+.book-carousel {
+    margin-top: 4%;
+}
+
+.customNextBtn, .customPrevBtn {
+    background-color: #ffffff;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin: 120px 0 0;
+}
+
+.customNextBtn, .customPrevBtn:focus {
+    outline: none!important;
+}
+
+.about-project {
+    background-color: #090909;
+}
+
+.about-project .container {
+    height: 930px;
+}
+
+.big-logo {
+    position: absolute;
+    margin-left: 56%;
+    margin-top: 20%;
+}
+
+.about-the-project h3 {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+    margin-top: 13%;
+}
+
+.about-catalog {
+    margin-top: 9%;
+}
+
+.about-simple-text {
+    color: #ffffff;
+    font-family: ProximaNova-Light;
+    font-size: 14px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.about-simple-text a {
+    color: #FC6D44;
+}
+
+.about-profile {
+    margin-top: 11%;
+}
+
+.about-profile-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.about-profile-text a {
+    color: #FC6D44;
+}
+
+.about-last-read {
+    margin-top: 4.5%;
+}
+
+.about-last-read-text {
+    font-family: ProximaNova-Regular;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 122.78%;
+    letter-spacing: 0.03em;
+}
+
+.about-last-read-a {
+    font-family: ProximaNova-Semibold;
+    color: #ffffff;
+}
+
+.auth-block {
+    margin-top: 13.5%
+}
+
+.login-a {
+    font-family: Syne-Bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.sign-up-a {
+    font-family: Syne-Bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    border: 1px solid #ffffff;
+    padding: 15px 51px;
+    color: #ffffff;
+}
+
+/* ---- ERROR 404 ---- */
+
+.error-page-h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.error-page-p {
+    font-family: ProximaNova-Regular;
+    text-align: center;
+    font-size: 38px;
+}
