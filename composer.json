@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Engine\\": "engine",
+      "Content\\": "content",
+      "Admin\\": "admin"
+    }
+  },
+  "require": {
+    "php-di/php-di": "^6.1"
+  }
+}
