@@ -1,5 +1,7 @@
 <?php
 
+echo 'test';
+
 define('ROOT_DIR', __DIR__);
 define('ENV', 'Content');
 
